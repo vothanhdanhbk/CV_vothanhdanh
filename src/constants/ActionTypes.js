@@ -4,3 +4,5 @@ export const GET_COMMENT='GET_COMMENT';
 export const FETCH_COMMENT='FETCH_COMMENT';
 export const ADD_COMMENT_STORE='ADD_COMMENT_STORE';
 export const FETCH_RATING='FETCH_RATING';
+export const GET_ENGLISH='GET_ENGLISH';
+export const NEW_DATA='NEW_DATA';

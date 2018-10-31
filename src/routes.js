@@ -5,6 +5,7 @@ import CommentManager from './pages/CommentManager/CommentManager';
 import Contact from './pages/Contact/Contact';
 import SignUp from './pages/SignUp/SignUp';
 import SignIn from './pages/SignIn/SignIn';
+import English4me from './english/english4me'
 const routes = [
     {
         path: '/',
@@ -30,6 +31,11 @@ const routes = [
         path: '/contact',
         exact: false,
         main: () => <Contact />
+    },
+    {
+        path: '/english4me',
+        exact: false,
+        main: () => <English4me />
     },
     {
         path: '',

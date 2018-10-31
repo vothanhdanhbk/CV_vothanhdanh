@@ -144,3 +144,58 @@ export const actFetchMessageRequire = (states) => {
        
     };
 }
+//
+export const actGetEnglishRequire = () => {
+    return dispatch => {
+        return callApi('english4me', 'GET', null).then(res => {
+            dispatch(actGetEnglish(res.data));
+        });
+    };
+}
+
+export const actGetEnglish = (data) => {
+    return {
+        type: Types.GET_ENGLISH,
+        data
+    }
+}
+//////////////////////////////// Post new lession
+export const actFetchLessionRequire = (data) => {
+    return dispatch => {
+        return callApi('english4me', 'POST', {
+            title: data.title,
+            link: data.link,
+            timevideo: data.timevideo,
+            deadline: data.deadline,
+            date:data.date
+          }).then(res => {
+            dispatch(actGetEnglishRequire());
+        });
+       
+    };
+}
+//// delete lession
+export const actDeleteLessionRequest = (id) => {
+    return dispatch => {
+        return callApi(`english4me/${id}`, 'DELETE', null).then(res =>{
+            dispatch(actGetEnglishRequire());
+        })
+    }
+}
+/// sent new data to reducer
+
+export const actNewData = (data,id) => {
+
+    return dispatch => {
+        return callApi(`english4me/${id}`, 'PUT', {
+            title:data.title,
+            link:data.link,
+            deadline:data.deadline,
+            date:data.date,
+            timevideo:data.timevideo
+        }).then(res => {
+            
+            if(res.status != 200) alert("Something erro --- please try again !!! thank you")
+        });
+    }
+}

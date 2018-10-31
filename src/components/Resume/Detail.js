@@ -81,7 +81,7 @@ class Detail extends Component {
                                 <li>
                                     <a target="_blank" >Developer :</a>
 
-                                    <p>Use proficiency tools Visual Studio, visual code, C, Java Script, HTML,CSS, Git.</p>
+                                    <p>Use proficiency tools Visual Studio, visual code, C, Java Script XML, HTML,CSS, Git.</p>
                                 </li>
                                 <li>
                                     <a>Use :</a>
@@ -100,10 +100,12 @@ class Detail extends Component {
                                 </li>
                                 <li>
                                     <a >2015-2016 :Joint for some embedded projects.</a>
-                                    <p>about Internet Of Things (IOT).</p>
+                                    <p>about Internet Of Things (IOT).<br/>Learn about HTML ,Css . Java Scrip Xml,C .</p>
+                                    
                                 </li>
                                 <li>
-                                    <a >2017-2018 : Learn about FontEnd develope .</a>
+                                    <a >2017-Present : Learn about FontEnd develop .</a>
+                                    <p> Font-End :ReactJS ,Redux,webpack,redux-thunk,axios,..<br/>Use :Bootstrap ,SCSS.</p>
                                     <p className="red-color">I design this site using Reactjs.</p>
                                 </li>
                             </ul>
